@@ -15,6 +15,8 @@
 # along with GxWidgetTest. If not, see <http://www.gnu.org/licenses/>.
 
 widget_test = self.CreateWindow(48, 0, 450, 250, 'GxWidgetTest')
+widget_test.SetIcon("apps/default/GxWidgetTest/")
+
 vbox1 = VBox(widget_test.top_level_container, widget_test, [])
 widget_test.AddWidget(vbox1)
 
