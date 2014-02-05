@@ -1,5 +1,5 @@
 # This file is part of GxWidgetTest.
-# Copyright (C) 2013 Christopher Kyle Horton <christhehorton@gmail.com>
+# Copyright (C) 2014 Christopher Kyle Horton <christhehorton@gmail.com>
 
 # GxWidgetTest is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -28,8 +28,10 @@ widget_test.AddWidget(hbox_bottom, vbox1)
 # Top HBox widgets
 top_button = Button(hbox_top, widget_test, "Create new window", "self.parent_window.wm.CreateWindow(48, 0, 400, 400, 'Spawned by button')")
 top_label = Label(hbox_top, widget_test, "Click to make a new window")
+top_textbox = TextBox(hbox_top, widget_test, "This is a multiline textbox. We can fill it with long text and see how well it flows!")
 widget_test.AddWidget(top_button, hbox_top)
 widget_test.AddWidget(top_label, hbox_top)
+widget_test.AddWidget(top_textbox, hbox_top)
 
 # Lower HBox widgets
 left_button = Button(hbox_bottom, widget_test, "Left test button", "print 'Left test button clicked!'")
