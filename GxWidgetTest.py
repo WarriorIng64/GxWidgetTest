@@ -22,6 +22,7 @@ widget_test.AddWidget(vbox1)
 
 hbox_bottom = HBox(vbox1, widget_test, [])
 hbox_top = HBox(vbox1, widget_test, [])
+hbox_bottom.RequestHeight(32)
 widget_test.AddWidget(hbox_top, vbox1)
 widget_test.AddWidget(hbox_bottom, vbox1)
 
