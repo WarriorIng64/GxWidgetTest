@@ -20,9 +20,11 @@ widget_test.SetIcon("apps/default/GxWidgetTest/")
 vbox1 = VBox(widget_test.top_level_container, widget_test, [])
 widget_test.AddWidget(vbox1)
 
+topmost_textentry = TextEntrySinglelineBox(vbox1, widget_test, "Initial text here.")
 hbox_bottom = HBox(vbox1, widget_test, [])
 hbox_top = HBox(vbox1, widget_test, [])
 hbox_bottom.RequestHeight(32)
+widget_test.AddWidget(topmost_textentry, vbox1)
 widget_test.AddWidget(hbox_top, vbox1)
 widget_test.AddWidget(hbox_bottom, vbox1)
 
