@@ -38,8 +38,8 @@ widget_test.AddWidget(top_label, hbox_top)
 widget_test.AddWidget(top_textbox, hbox_top)
 
 # Lower HBox widgets
-left_button = Button(hbox_bottom, widget_test, "Left test button", "print 'Left test button clicked!'")
-right_button = Button(hbox_bottom, widget_test, "Right test button", "print 'Right test button clicked!'")
+left_button = Button(hbox_bottom, widget_test, "Left test button", "self.parent_window.wm.ShowPopupMessage('Left test button clicked!')")
+right_button = Button(hbox_bottom, widget_test, "Right test button", "self.parent_window.wm.ShowPopupMessage('Right test button clicked!')")
 empty_space = EmptyWidget(hbox_bottom, widget_test)
 widget_test.AddWidget(left_button, hbox_bottom)
 widget_test.AddWidget(empty_space, hbox_bottom)
